@@ -109,9 +109,8 @@ header {
   margin-left: auto;
 }
 .header_contact_icon {
-  fill: currentColor;
   vertical-align: middle;
-  --color2: currentColor;
+  margin-right: 10px;
 }
 .header_kontact_link {
   color: #757575;
@@ -253,21 +252,20 @@ header {
 }
 /* ⬇ <<social media icons>> ⬇ */
 .social-media {
+  color: #afb1b8;
   border-radius: 50%;
   display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media:hover,
 .social-media:focus {
   background-color: var(--link_and_button_color);
-  --color3: var(--letters_and_logo_color_white);
+  color: var(--letters_and_logo_color_white);
   outline: none;
-}
-.fill_currentColor_svg {
-  fill: currentColor;
 }
 .social-media-box {
   display: flex;
@@ -297,6 +295,7 @@ header {
   gap: 30px;
 }
 .aur_clients-a {
+  color: #afb1b8;
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
@@ -304,11 +303,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aur_clients-a:hover,
 .aur_clients-a:focus {
-  --color3: var(--link_and_button_color);
+  color: var(--link_and_button_color);
   border-color: var(--link_and_button_color);
   outline: none;
 }
